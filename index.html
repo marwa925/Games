@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+  <div class="layer justify-content-center align-items-center">
+    <span class="loader"></span>
+  </div>
+    <section class="content">
+
+      <header class="home">
+        <img src="img/wraper.png" class="w-100" alt="game Photo">
+      </header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary  position-sticky top-0  translate-middle-y ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/logo-sm.png" class="col-2 " alt=""><span>GAME REVIEWS</span> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#" id="mmorpg">MMORPG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="shooter">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="sailing">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="permadeath">PERMADEATH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="superhero">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="pixel">PIXEL</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="row g-3 " id="inner" >
+        
+      </div>
+    </section>
+    
+    <section class="details">
+      
+      <div class="container pt-5 position-relative">
+        <h2 class="text-white">Details Game</h2>
+        <i class="fa-solid fa-xmark position-absolute top-0 end-0 text-muted m-5 fa-2x" id="close"></i>
+        <div class="row">
+          <div class="col-md-4">
+            <div>
+              <img class="w-100" alt="" id="imgD">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="details-content text-white">
+              <p>
+                <span class="fw-bolder fs-3">Title:</span>
+                <span id="title" class="fw-bolder fs-3"></span>
+              </p>
+              <p>
+                <span class="fw-bolder fs-6">Category:</span>
+                <span id="Category" class="fw-bolder bg-info p-1 rounded-2 text-dark fs-6"></span>
+              </p>
+              <p>
+                <span class="fw-bolder fs-6">Platform:</span>
+                <span id="Platform" class="fw-bolder bg-info p-1 rounded-2 text-dark fs-6"></span>
+              </p>
+              <p>
+                <span class="fw-bolder fs-6">Status:</span>
+                <span id="Status" class="fw-bolder bg-info p-1 rounded-2 text-dark fs-6"></span>
+              </p>
+              <p id="description"></p>
+              <a  class="btn btn-outline-warning mb-2" id="btn" target="_blank">Show Game</a>
+              <!-- <button class="btn btn-outline-warning">Show Game</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+
+body{
+    background-color: #272b30;
+    font-family: "Comfortaa", cursive;
+    font-size: 12px;
+}
+
+:root{
+    --main-color:#fff;
+}
+.home img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+nav{
+    background-color: rgb(58, 73, 123);
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    z-index: 9999999;
+    
+}
+.navbar .navbar-brand span{
+    color: var(--main-color);
+}
+.content{
+    width: 80%;
+    margin: auto;
+}
+.card-title span {
+    background-color:rgb(58, 73, 123) ;
+    color: var(--main-color);
+}
+.card-title{
+    color: var(--main-color);
+}
+hr{
+    border-top: 1px solid black;
+}
+.items{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    transition: all 0.5s;
+}
+.items:hover{
+    transform: scale(1.04);
+    
+}
+.items:hover .card-title span{
+    background-color:#0d6efd;
+    
+}
+#close{
+    cursor: pointer;
+}
+.details{
+    display: none;
+}
+.active{
+    color: #0394c7;
+}
+.nav-link{
+    color: #fff;
+}
+.nav-link:hover ,.navbar-nav .nav-link.active{
+    color: #0394c7;
+}
+.layer{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0px;
+    bottom: 0;
+    
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.66);
+    z-index: 99999999;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: scaleOut 2s ease-in-out infinite;
+  }
+  .loader::after {
+    border-color: #FF3D00;
+    animation-delay: 1s;
+  }
+.parag{
+    height:60px;
+}
+  @keyframes scaleOut {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .navbar{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .content{
+        width: 95%;
+        
+    }
+    .navbar-brand{
+        font-size: 1rem;
+        margin-right: 0px;
+    }
+  }
